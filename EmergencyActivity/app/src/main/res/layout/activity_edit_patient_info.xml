@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.bingxu.emergencyactivity.EditPatientInfoActivity">
+
+    <TextView
+        android:id="@+id/patientno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Patient NO.:"
+        />
+    <EditText
+        android:id="@+id/edit_patientno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/patientno"
+        android:layout_toEndOf="@+id/patientno" />
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="First Name:"
+        android:layout_below="@+id/edit_patientno"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/edit_firstname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_patientno"
+        android:layout_toEndOf="@+id/firstname"
+        android:layout_alignLeft="@+id/edit_patientno"
+        android:layout_alignStart="@+id/edit_patientno" />
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name:"
+        android:textSize="20dp"
+        android:layout_below="@+id/edit_firstname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/edit_lastname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_firstname"
+        android:layout_alignLeft="@+id/edit_firstname"
+        android:layout_alignStart="@+id/edit_firstname" />
+    <TextView
+        android:id="@+id/gender"
+        android:text="Gender:"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_lastname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <RadioGroup
+        android:id="@+id/radio_gender"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/gender"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/edit_lastname"
+        android:layout_alignStart="@+id/edit_lastname">
+        <RadioButton
+            android:id="@+id/male"
+            android:text="Male"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+            />
+        <RadioButton
+            android:id="@+id/female"
+            android:text="Female"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </RadioGroup>>
+
+    <TextView
+        android:id="@+id/age"
+        android:text="Age:"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_gender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <EditText
+        android:id="@+id/edit_age"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_gender"
+        android:layout_alignLeft="@+id/radio_gender"
+        android:layout_alignStart="@+id/radio_gender"
+        />
+    <TextView
+        android:id="@+id/address"
+        android:text="Address:"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_age"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/edit_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_age"
+        android:layout_alignLeft="@+id/edit_age"
+        android:layout_alignStart="@+id/edit_age" />
+    <TextView
+        android:id="@+id/email"
+        android:text="Email:"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_address"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/email"
+        android:layout_alignLeft="@+id/edit_address"
+        android:layout_alignStart="@+id/edit_address" />
+    <TextView
+        android:id="@+id/phone"
+        android:text="Phone:"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_email"
+        android:layout_alignLeft="@+id/edit_email"
+        android:layout_alignStart="@+id/edit_email" />
+    <Button
+        android:id="@+id/save"
+        android:text="Save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_phone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

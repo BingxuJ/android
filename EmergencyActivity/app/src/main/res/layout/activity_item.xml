@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/activityname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/join"
+        android:layout_toStartOf="@+id/join"
+        />
+    <TextView
+        android:id="@+id/adescription"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activityname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/join"
+        android:layout_toStartOf="@+id/join" />
+    <Button
+        android:id="@+id/join"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="Join"
+
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/info"
+        android:layout_toStartOf="@+id/info"
+
+         />
+    <Button
+        android:id="@+id/info"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textSize="10dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/chat"
+        android:layout_toStartOf="@+id/chat" />
+    <Button
+        android:id="@+id/chat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:textSize="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

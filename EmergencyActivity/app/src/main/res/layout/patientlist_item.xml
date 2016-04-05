@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants">
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_toStartOf="@+id/info"
+        android:layout_toLeftOf="@+id/info" />
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/firstname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/info"
+        android:layout_toLeftOf="@+id/info" />
+    <TextView
+        android:id="@+id/patientno"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/lastname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/info"
+        android:text="Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignBottom="@+id/lastname"
+        android:layout_toLeftOf="@+id/patient_selected"
+        android:layout_toStartOf="@+id/patient_selected"
+        android:focusable="false"/>
+    <CheckBox
+        android:id="@+id/patient_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/info"
+        android:layout_alignTop="@+id/info"
+        android:focusable="false"
+        />
+
+</RelativeLayout>

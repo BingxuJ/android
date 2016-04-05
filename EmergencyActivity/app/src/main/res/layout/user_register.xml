@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tregister_username"
+        android:text="Username:"
+        android:textSize="7pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/register_username"
+        android:textSize="7pt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tregister_username"
+        android:layout_alignLeft="@+id/register_firstname"
+        android:layout_alignStart="@+id/register_firstname" />
+    <TextView
+        android:id="@+id/tregister_password"
+        android:text="Password:"
+        android:textSize="7pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tregister_username"
+        android:layout_alignTop="@+id/register_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/register_password" />
+    <EditText
+        android:id="@+id/register_password"
+        android:textSize="7pt"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+
+        android:layout_below="@+id/register_username"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/register_lastname"
+        android:layout_alignStart="@+id/register_lastname" />
+    <TextView
+        android:id="@+id/tregister_firstname"
+        android:text="First Name:"
+        android:textSize="7pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/register_firstname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/register_firstname" />
+    <EditText
+        android:id="@+id/register_firstname"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="7pt"
+        android:layout_below="@+id/register_password"
+        android:layout_alignRight="@+id/register_password"
+        android:layout_alignEnd="@+id/register_password"
+        android:layout_alignLeft="@+id/register_lastname"
+        android:layout_alignStart="@+id/register_lastname" />
+    <TextView
+        android:id="@+id/tregister_lastname"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="7pt"
+        android:text="Last Name:"
+        android:layout_alignBottom="@+id/register_lastname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/register_lastname" />
+    <EditText
+        android:id="@+id/register_lastname"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="7pt"
+        android:layout_below="@+id/register_firstname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tregister_department"
+        android:layout_toRightOf="@+id/tregister_department" />
+    <TextView
+        android:id="@+id/tregister_email"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="7pt"
+        android:text="Email:"
+        android:layout_below="@+id/tregister_lastname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="7pt"
+        android:layout_below="@+id/register_lastname"
+        android:layout_alignRight="@+id/register_lastname"
+        android:layout_alignEnd="@+id/register_lastname"
+        android:layout_toRightOf="@+id/tregister_department"
+        android:layout_toEndOf="@+id/tregister_department" />
+    <TextView
+        android:id="@+id/tregister_phone"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="7pt"
+        android:text="Phone:"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/tregister_address"
+        android:layout_alignTop="@+id/register_phone" />
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="7pt"
+        android:layout_below="@+id/register_email"
+        android:layout_alignRight="@+id/register_email"
+        android:layout_toRightOf="@+id/tregister_department"
+        android:layout_toEndOf="@+id/tregister_department" />
+    <TextView
+        android:id="@+id/tregister_address"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="7pt"
+        android:text="Address:"
+        android:layout_alignTop="@+id/register_address"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/register_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="7pt"
+        android:layout_below="@+id/register_phone"
+        android:layout_alignRight="@+id/register_phone"
+        android:layout_toRightOf="@+id/tregister_department"
+        android:layout_toEndOf="@+id/tregister_department" />
+
+    <TextView
+        android:id="@+id/tregister_department"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="7pt"
+        android:text="Department:"
+        android:layout_below="@+id/register_address"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/register_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="7pt"
+        android:layout_below="@+id/register_address"
+        android:layout_alignRight="@+id/register_address"
+        android:layout_toRightOf="@+id/tregister_department"
+        android:layout_toEndOf="@+id/tregister_department" />
+    <TextView
+        android:id="@+id/tregister_department_address"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="7pt"
+        android:text="DepAdress:"
+        android:layout_alignTop="@+id/register_department_address"
+        android:layout_alignRight="@+id/tregister_department"
+        android:layout_alignLeft="@+id/tregister_department"
+        android:layout_alignEnd="@+id/tregister_department" />
+    <EditText
+        android:id="@+id/register_department_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="7pt"
+        android:layout_below="@+id/register_department"
+        android:layout_alignRight="@+id/register_department"
+        android:layout_toEndOf="@+id/tregister_department_address"
+        android:layout_toRightOf="@+id/tregister_department_address" />
+
+
+    <TextView
+        android:id="@+id/tregister_role"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="7pt"
+        android:text="Role:"
+        android:layout_below="@+id/register_department_address"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <RadioGroup
+        android:id="@+id/radio_role"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tregister_role"
+        android:layout_toRightOf="@+id/tregister_department"
+        android:layout_toEndOf="@+id/tregister_department"
+        android:weightSum="1">
+
+        <RadioButton
+            android:id="@+id/radio_doctor"
+            android:text="Doctor"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:checked="true"
+            android:layout_below="@+id/register_department_address"
+            android:layout_alignLeft="@+id/register_department_address"
+            android:layout_alignStart="@+id/register_department_address" />
+
+        <RadioButton
+            android:id="@+id/radio_para"
+            android:text="Paramedic"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/register_department_address"
+            android:layout_toRightOf="@+id/radio_doctor"
+            android:layout_toEndOf="@+id/radio_doctor"
+            android:layout_marginLeft="38dp"
+            android:layout_marginStart="38dp"
+            android:layout_weight="0.25" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tregister_staffid"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="7pt"
+        android:text="RoleID:"
+        android:layout_above="@+id/register_stafflevel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/register_staffid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="7pt"
+        android:layout_below="@+id/tregister_role"
+        android:layout_alignRight="@+id/register_department_address"
+        android:layout_alignEnd="@+id/register_department_address"
+        android:layout_alignLeft="@+id/radio_role"
+        android:layout_alignStart="@+id/radio_role" />
+    <TextView
+        android:id="@+id/tregister_stafflevel"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="7pt"
+        android:text="RoleLevel:"
+        android:layout_above="@+id/select_photo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/register_stafflevel"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="7pt"
+        android:layout_below="@+id/register_staffid"
+        android:layout_alignLeft="@+id/register_staffid"
+        android:layout_alignStart="@+id/register_staffid"
+        android:layout_alignRight="@+id/register_staffid"
+        android:layout_alignEnd="@+id/register_staffid" />
+
+
+    <Button
+        android:id="@+id/select_photo"
+        android:text="Photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_stafflevel"
+        android:layout_toRightOf="@+id/tregister_staffid"
+        android:layout_toEndOf="@+id/tregister_staffid" />
+    <Button
+        android:id="@+id/user_register_button"
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="51dp"
+        android:layout_marginEnd="51dp"
+        android:layout_alignTop="@+id/select_photo"
+        android:layout_alignRight="@+id/register_lastname"
+        android:layout_alignEnd="@+id/register_lastname" />
+
+
+
+</RelativeLayout>
